@@ -1179,9 +1179,7 @@ public class DatastoreImpl implements Datastore, AdvancedDatastore {
 	public WriteConcern getDefaultWriteConcern() {return defConcern;} 
 	public void setDefaultWriteConcern(WriteConcern wc) {defConcern = wc;}
 
-	@Override
 	public DBDecoderFactory setDecoderFact(DBDecoderFactory fact) { return decoderFactory = fact; }
 
-	@Override
 	public DBDecoderFactory getDecoderFact() { return decoderFactory != null ? decoderFactory : mongo.getMongoOptions().dbDecoderFactory; }
 }

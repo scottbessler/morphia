@@ -8,11 +8,15 @@
 		<relativePath>../</relativePath>
 	</parent>
 
+	<properties>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
+	</properties>
+	
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.google.code.morphia</groupId>
 	<artifactId>morphia</artifactId>
 	<packaging>jar</packaging>
-	<version>0.99.1-SNAPSHOT</version>
+	<version>1.00-SNAPSHOT</version>
 	<name>morphia</name>
 
 	<dependencies>
