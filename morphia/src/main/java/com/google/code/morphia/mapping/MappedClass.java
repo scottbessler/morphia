@@ -300,7 +300,12 @@ public class MappedClass {
 	public boolean equals(Class<?> clazz) {
 		return this.getClazz().equals(clazz);
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return this.getClazz().hashCode();
+	}
+
 	/** Call the lifcycle methods */
 	public DBObject callLifecycleMethods(Class<? extends Annotation> event, Object entity, DBObject dbObj, Mapper mapr) {
 		List<ClassMethodPair> methodPairs = getLifecycleMethods((Class<Annotation>)event);
